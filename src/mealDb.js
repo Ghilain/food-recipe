@@ -120,10 +120,10 @@ const fetchMeal = async () => {
         </div>
         <div class="meal-body d-flex justify-between">
           <h4>${element.strMeal}</h4>
-          <!-- <button class="fav-btn" ><i class="fas fa-heart" data="${element.idMeal}"></i></button> -->
+          <button class="fav-btn" ><i class="fas fa-heart" data="${element.idMeal}"></i></button>
         </div>
         <div>
-          <!-- <div class = "likes"><span class= "likes-qty" data="${element.idMeal}">0</span> likes </div>-->
+          <div class = "likes"><span class= "likes-qty" data="${element.idMeal}">0</span> likes </div>
           <button class= "comments" data="${element.idMeal}">Comments</button>
         </div>
       </div>`;
