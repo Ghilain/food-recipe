@@ -60,26 +60,26 @@ const popup = async () => {
     </div>
       `;
 
-        // const ingredientsUl = document.querySelector('#ingredientsUl');
-        // const ingredients = () => {
-        //   const entries = Object.entries(element);
-        //   const ingredientsArray = entries
-        //     .filter(
-        //       ([key, value]) => key.startsWith('strIngredient') && value && value.trim(),
-        //     )
-        //     /* eslint-disable-next-line */
-        //     .map(([key, value]) => value);
-        //   const measuresArray = entries
-        //     .filter(
-        //       ([key, value]) => key.startsWith('strMeasure') && value && value.trim(),
-        //     )
-        //     /* eslint-disable-next-line */
-        //     .map(([key, value]) => value);
-        //   for (let i = 1; i < ingredientsArray.length; i += 1) {
-        //   ingredientsUl.innerHTML += `<li> ${ingredientsArray[i]} - ${measuresArray[i]} </li> `;
-        //   }
-        // };
-        // ingredients();
+        const ingredientsUl = document.querySelector('#ingredientsUl');
+        const ingredients = () => {
+          const entries = Object.entries(element);
+          const ingredientsArray = entries
+            .filter(
+              ([key, value]) => key.startsWith('strIngredient') && value && value.trim(),
+            )
+            /* eslint-disable-next-line */
+            .map(([key, value]) => value);
+          const measuresArray = entries
+            .filter(
+              ([key, value]) => key.startsWith('strMeasure') && value && value.trim(),
+            )
+            /* eslint-disable-next-line */
+            .map(([key, value]) => value);
+          for (let i = 1; i < ingredientsArray.length; i += 1) {
+            ingredientsUl.innerHTML += `<li> ${ingredientsArray[i]} - ${measuresArray[i]} </li> `;
+          }
+        };
+        ingredients();
         const exit = document.querySelector('.fa-times');
         exit.addEventListener('click', () => {
           header.classList.remove('hidden');
@@ -140,20 +140,20 @@ const fetchMeal = async () => {
     popup();
   };
 
-  // const foodCount = document.getElementsByClassName('foodCount');
-  // const printCount = async (category) => {
-  //   const mealapiurl = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`;
-  //   const meals = await fetch(mealapiurl)
-  //     .then((res) => res.json())
-  //     .then((data) => data.meals);
+  const foodCount = document.getElementsByClassName('foodCount');
+  const printCount = async (category) => {
+    const mealapiurl = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`;
+    const meals = await fetch(mealapiurl)
+      .then((res) => res.json())
+      .then((data) => data.meals);
 
-  //   for (let i = 0; i < foodCount.length; i += 1) {
-  //     foodCount[i].innerHTML = '';
-  //     if (foodCount[i].classList.contains(category)) {
-  //       foodCount[i].innerHTML = `(${meals.length})`;
-  //     }
-  //   }
-  // };
+    for (let i = 0; i < foodCount.length; i += 1) {
+      foodCount[i].innerHTML = '';
+      if (foodCount[i].classList.contains(category)) {
+        foodCount[i].innerHTML = `(${meals.length})`;
+      }
+    }
+  };
 
   const navlinks = document.querySelectorAll('nav li');
   const resetLinks = () => {
@@ -166,7 +166,7 @@ const fetchMeal = async () => {
     navlinks[i].addEventListener('click', () => {
       const category = navlinks[i].textContent.toLowerCase();
       getCategoryUrl(category);
-      // printCount(category);
+      printCount(category);
       resetLinks();
       setTimeout(() => like(), 2000);
       Displaylikes();
@@ -174,7 +174,7 @@ const fetchMeal = async () => {
     });
   }
   getCategoryUrl('seafood');
-  // printCount('seafood');
+  printCount('seafood');
 };
 
 fetchMeal();
