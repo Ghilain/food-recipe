@@ -1,4 +1,4 @@
-// import sendComment from './comments.js';
+import sendComment from './comments.js';
 import { Displaylikes, like } from './likeSection.js';
 
 const popup = async () => {
@@ -39,12 +39,12 @@ const popup = async () => {
         </div>
         <div class="comments-container">
           <div class="all-comments text-center">
-            <h3>Comments <span id= "comments-count">0</span></h3>
+            <h3>Comments <span id= "comments-count">0</span> </h3>
             <ul id="comments-ul" class = "d-flex justify-center flex-col">
 
             </ul>
           </div>
-          <!--  <div class = "text-center">
+          <div class = "text-center">
             <h3> Add a comment </h3> 
           </div>
       
@@ -56,7 +56,7 @@ const popup = async () => {
           <button id="submit-comment" class="submit-comment" data="${element.idMeal}"> Submit</button>
           
       </form>
-    </div> -->
+    </div>
     </div>
       `;
 
@@ -88,7 +88,7 @@ const popup = async () => {
           modal.classList.add('hidden');
         });
       }
-      // sendComment();
+      sendComment();
     });
   };
 
