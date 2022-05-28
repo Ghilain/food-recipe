@@ -1,8 +1,10 @@
+  ![](https://img.shields.io/badge/Microverse-blueviolet) 
+
 # Food Recipe PROJECT
 
 > This is a Capstone project being built in the second module of curriculum at microverse. it's an application that uses the MealDB API to display meals and instructions on how to make the meals. The project also utilizes the Involvement API to update and display comments and likes for the meals
 
-### Click [here](https://ghilain.github.io/food-recipe/) to see deployed live version
+### Click [here](https://ghilain.github.io/food-recipe/dist/index.html) to see deployed live version
 
 ### Features implemented so far are:
 
@@ -100,15 +102,21 @@ All source code files are licensed under the permissive zlib license
 
 ## Author
 
+👤 **Nedjwa Bouraiou**
+ 
+- GitHub: [@Nedjwab](https://github.com/nedjwab)
+- LinkedIn: [@Bouraiounedjwa](https://www.linkedin.com/feed/)
+
 👤 **Ghilain Ishimwe**
 
 - GitHub: [Ghilain Ishimwe](https://github.com/Ghilain)
 - Twitter: [@GhilainIshimwe](https://twitter.com/GhilainIshimwe)
 - LinkedIn: [Ghilain Ishimwe](https://www.linkedin.com/in/ghilain-ishimwe-067a5b1b4/)
 
-👤 **Ghilain Ishimwe**
+## 🤝 Contributing
 
-- GitHub: [Ghilain Ishimwe](https://github.com/Ghilain)
-- Twitter: [@GhilainIshimwe](https://twitter.com/GhilainIshimwe)
-- LinkedIn: [Ghilain Ishimwe](https://www.linkedin.com/in/ghilain-ishimwe-067a5b1b4/)
+Contributions, issues, and feature requests are welcome!
 
+## Show your support
+
+Give a ⭐️ if you like this project!
