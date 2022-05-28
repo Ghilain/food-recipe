@@ -102,10 +102,6 @@ All source code files are licensed under the permissive zlib license
 
 ## Author
 
-👤 **Nedjwa Bouraiou**
- 
-- GitHub: [@Nedjwab](https://github.com/nedjwab)
-- LinkedIn: [@Bouraiounedjwa](https://www.linkedin.com/feed/)
 
 👤 **Ghilain Ishimwe**
 
