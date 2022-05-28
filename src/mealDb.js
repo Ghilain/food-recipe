@@ -37,18 +37,18 @@ const popup = async () => {
         <p> <span class="description-header">Instructions:</span> <p> <span class = "recipe-instrruction"> ${element.strInstructions}  > read more </button> </span>
         </div>
         </div>
-        <!-- <div class="comments-container">
+        <div class="comments-container">
           <div class="all-comments text-center">
             <h3>Comments <span id= "comments-count">0</span></h3>
             <ul id="comments-ul" class = "d-flex justify-center flex-col">
 
             </ul>
           </div>
-            <div class = "text-center">
+          <!--  <div class = "text-center">
             <h3> Add a comment </h3> 
           </div>
       
-    <div class="add-comments text-center d-flex justify-center">
+     <div class="add-comments text-center d-flex justify-center">
       <form action="POST">
           <input name= "name" type="text" id="input-name" placeholder="Your name" required>
           <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
